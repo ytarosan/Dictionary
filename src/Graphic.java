@@ -1,32 +1,20 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 
-import static javax.swing.GroupLayout.Alignment.*;
-
-public class Graphic extends Container {
+public class Graphic extends JFrame {
       void construktGraohic(){
-        JFrame f = new JFrame("Dictionary");
-        GridLayout columns = new GridLayout(2, 2, 10, 5);
-        f.setSize(600,400);
-        f.setMaximumSize(new Dimension(600,400));
-        f.setLocationRelativeTo(null);
-
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel panel = new JPanel();
-        panel.add(new JButton("New"));
-        panel.add(new JButton("Delete"));
-        panel.add(new JButton("Overdriver"));
-        panel.add(new JButton("Test"));
-        panel.setLayout(columns);
-        f.add(panel);
-        f.setVisible(true);
-
-
-
-
-
-
+        JFrame window = new JFrame("Dictionary");
+        window.setSize(600 , 400);
+        window.setMinimumSize(new Dimension(600 , 400));
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setLocationRelativeTo(null);
+        window.setVisible(true);
     }
+    class Button extends JButton{
+          public Button(){
+              
+          }
+    }
+
 
 }
