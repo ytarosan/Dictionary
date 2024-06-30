@@ -12,7 +12,7 @@ public class Graphic extends JFrame {
     }
     class Button extends JButton{
           public Button(){
-              
+
           }
     }
 
